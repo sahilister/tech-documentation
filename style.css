@@ -1,0 +1,58 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+}
+main {
+    position: absolute;
+    left: 320px;
+    padding: 30px;
+    text-align: justify;
+}
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 250px;
+    width: 310px;
+    height: 100%;
+    border-right: solid;
+    border-block: solid;
+    background-color: #ffffff;
+    z-index: auto;
+}
+#navbar ul {
+    height: 100%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color: #a9a9a9;
+    border-top: 1px solid;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    padding: 10px 30px;
+    display: block;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+i{
+    background-color: #dcdcdc;
+}
+code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 10px 30px;
+    margin: 10px;
+
+}
+header {
+    font-size: 1.8em;
+    font-weight: thin;
+}
+#java_doc {
+    padding: 5px 10px;
+}
