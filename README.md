@@ -1,1 +1,1 @@
-deployment link - https://tech-doc.now.sh
+Live Version at https://tech-doc.now.sh
