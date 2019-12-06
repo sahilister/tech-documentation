@@ -2,12 +2,19 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.5;
 }
+
 main {
     position: absolute;
     left: 320px;
     padding: 30px;
     text-align: justify;
 }
+
+header {
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
 nav {
     position: fixed;
     top: 0px;
@@ -20,14 +27,26 @@ nav {
     background-color: #ffffff;
     z-index: auto;
 }
+
+i{
+    background-color: #dcdcdc;
+}
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
 #navbar ul {
     height: 100%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 #navbar li {
-    color: #a9a9a9;
     border-top: 1px solid;
     width: 100%;
     list-style: none;
@@ -35,36 +54,48 @@ nav {
     padding: 10px 30px;
     display: block;
 }
+
 #navbar a{
     text-decoration: none;
     color: black;
 }
-i{
-    background-color: #dcdcdc;
-}
-code {
-    display: block;
-    background-color: #f7f7f7;
-    padding: 10px 30px;
-    margin: 10px;
 
-}
-header {
-    font-size: 1.8em;
-    font-weight: thin;
-}
 #java_doc {
     padding: 5px 10px;
 }
 
+/* for detecting dark theme  and making changes*/
+@media (prefers-color-scheme: dark) {   
+    body, nav {
+      background-color: #282828;
+      color: #f3f3f3;
+    }
+
+    code, i {
+        background-color: #d3d3d3;
+        color: #3d3d3d;
+    }
+
+    #navbar a{
+        color: white
+    }
+
+    a {
+        text-decoration: none;
+        color: aqua;
+    }
+}
+  
 @media only screen and (max-width:700px){
     #java_doc {
         text-align: center;
     }
+
     header {
      text-align: center;
     }
-     #navbar {
+
+    #navbar {
          position: absolute;
          top: 0;
          padding: 0;
@@ -72,22 +103,24 @@ header {
          width: 100%;
          border: none;
          
-     }
-     #navbar ul {
+    }
+
+    #navbar ul {
          border: 1px solid;
          height: 207px;
-       }
-     #main-doc {
-         position: relative;
-         margin-left: 0px;
-         margin-top: 270px;
-       }
-     main {
-         position: relative;
-         left: 10px;
-         right: 10px;
-         padding: 20px 20px;
-         text-align: justify;
-     }
+    }
 
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+
+    main {
+        position: relative;
+        left: 10px;
+        right: 10px;
+        padding: 20px 20px;
+        text-align: justify;
+    }
 }
